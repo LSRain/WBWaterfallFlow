@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LSFlowLayout.h"
 
 @interface ViewController ()
 
@@ -14,16 +15,24 @@
 
 @implementation ViewController
 
+static NSString * const reuseIdentifier = @"cellid";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // 切换布局
+    self.collectionView.collectionViewLayout = [[LSFlowLayout alloc] init];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark <UICollectionViewDataSource>
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 50;
 }
 
-
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor greenColor];
+    return cell;
+}
 @end
