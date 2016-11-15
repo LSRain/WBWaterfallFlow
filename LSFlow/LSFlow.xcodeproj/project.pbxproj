@@ -13,6 +13,7 @@
 		51266E491DDA92AC00A3AB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51266E471DDA92AC00A3AB4F /* Main.storyboard */; };
 		51266E4B1DDA92AC00A3AB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51266E4A1DDA92AC00A3AB4F /* Assets.xcassets */; };
 		51266E4E1DDA92AC00A3AB4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51266E4C1DDA92AC00A3AB4F /* LaunchScreen.storyboard */; };
+		51266E581DDA933400A3AB4F /* LSFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 51266E571DDA933400A3AB4F /* LSFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		51266E4A1DDA92AC00A3AB4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51266E4D1DDA92AC00A3AB4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51266E4F1DDA92AC00A3AB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51266E561DDA933400A3AB4F /* LSFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFlowLayout.h; sourceTree = "<group>"; };
+		51266E571DDA933400A3AB4F /* LSFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		51266E3D1DDA92AC00A3AB4F /* LSFlow */ = {
 			isa = PBXGroup;
 			children = (
+				51266E551DDA930700A3AB4F /* LSFlow */,
 				51266E411DDA92AC00A3AB4F /* AppDelegate.h */,
 				51266E421DDA92AC00A3AB4F /* AppDelegate.m */,
 				51266E441DDA92AC00A3AB4F /* ViewController.h */,
@@ -77,6 +81,15 @@
 				51266E3F1DDA92AC00A3AB4F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51266E551DDA930700A3AB4F /* LSFlow */ = {
+			isa = PBXGroup;
+			children = (
+				51266E561DDA933400A3AB4F /* LSFlowLayout.h */,
+				51266E571DDA933400A3AB4F /* LSFlowLayout.m */,
+			);
+			path = LSFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 			files = (
 				51266E461DDA92AC00A3AB4F /* ViewController.m in Sources */,
 				51266E431DDA92AC00A3AB4F /* AppDelegate.m in Sources */,
+				51266E581DDA933400A3AB4F /* LSFlowLayout.m in Sources */,
 				51266E401DDA92AC00A3AB4F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
